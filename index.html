@@ -4,7 +4,6 @@
 <head>
   <title>Unplugged Retreats| Refresh & Reconnect</title>
   <meta charset="utf-8">
-  <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +22,9 @@
   <meta name="theme-color" content="#fafafa">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:500,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,8 +42,8 @@
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 
   <header>
-    <div class="header">
-      <figure><a href="img/unpluggedlogo.png"><img src="" alt="unplugged logo"></a></figure>
+    <div class="content-wrapper">
+      <figure><a href="img/unpluggedlogo.png"><img src="img/unpluggedlogo.png" alt="unplugged logo"></a></figure>
       <div class="header-divider"></div>
       <nav>
         <ul>
@@ -55,7 +56,6 @@
 
   <main>
     <section class="hero-area">
-      <a href="hero-image" img src="img/unplugged-retreat.jpg" alt="unplugged retreat"></a>
       <div class="content-wrapper">
         <h1>Retreat from the desk, return refreshed.</h1>
       </div>
@@ -69,9 +69,7 @@
         </div>
         <div class="form">
           <h3>Find out more.</h3>
-          <email class="email">
-            <form action="mailto:name@email.com" method="post"></form>
-          </email>
+          <form action="mailto:name@email.com" method="post"></form>
           <input type="text" name="name" value="name@email.com">
           <input type="button" value="Download Itinerary">
         </div>
@@ -81,40 +79,32 @@
     <section class="features">
       <div class="content-wrapper">
         <h2>Have the work week you always dreamed of - without the bad wifi.</h2>
-        <a href="features-img" img src="img/unplugged-retreat-featuresjpg" alt="unplugged-retreat-features"></a>
-
         <div class="features-items">
           <article>
             <p class="fontawesome-icon"></p>
             <p class="features-item-description">Located in a peaceful bungalow outside of Lake Geneva, Wisconsin.</p>
           </article>
-
           <article>
             <p class="fontawesome-icon"></p>
             <p class="features-item-description">12 private rooms with ensuite bathrooms, 2 group meeting rooms, and 4
               breakout rooms.</p>
           </article>
-
           <article>
             <p class="fontawesome-icon"></p>
             <p class="features-item-description">Private chef team providing on demand meals - just like your team
               kitchen.</p>
           </article>
-
           <article>
             <p class="fontawesome-icon"></p>
             <p class="features-item-description">5 outdoor obstacle courses, including private beach ½ mile from
               bungalow.
             </p>
           </article>
-
           <article>
             <p class="fontawesome-icon"></p>
             <p class="features-item-description">Retreat facilitator to manage your day to day activities so you all get
-              a
-              chance to reset.</p>
+              a chance to reset.</p>
           </article>
-
           <article>
             <p class="fontawesome-icon"></p>
             <p class="features-item-description">Dedicated computer room for times that you must wifi.</p>
@@ -122,12 +112,15 @@
         </div>
       </div>
     </section>
-
     <section class="reviews">
       <div class="content-wrapper">
         <h2>Be a better team in 5 days, like this one.</h2>
-        <a href="review-img" img src="img/unplugged-retreat-lacrue.jpg" alt="unplugged-retreat-lacrue"></a>
         <article>
+          <figure>
+            <a href="review-img">
+              <img src="img/unplugged-retreat-lacrue.jpg" alt="A diverse group of smiling women at the retreat.">
+            </a>
+          </figure>
           <div>
             <h3>LaCrue Bottling Co. October 2018</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -161,7 +154,6 @@
         </div><!--footer contect ends-->
       </div>
     </div><!--footer content-wrapper ends-->
-
     <div class="copyright">
       <p>Copyright 20XX | Umplugged</p>
     </div>

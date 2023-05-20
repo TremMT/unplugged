@@ -113,13 +113,13 @@ a {
 h1 {
   font-size: 2.25em;
   line-height: 43px;
-  font-weight: 500;
 }
 
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  line-height: 30px;
 }
 
 h3,
@@ -134,9 +134,17 @@ p {
   line-height: 18px;
 }
 
-img {}
+figure img {
+  width: 100%;
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
 
-figure {}
+}
+
+figure {
+  margin: 0;
+}
 
 address {
   font-style: normal;
@@ -161,7 +169,7 @@ input[type=button] {
   padding: 20px 0;
   margin-top: 20px;
   background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.125em;
   color: #e2e3ed;
@@ -189,11 +197,19 @@ footer {
 header {
   padding: 15px 0;
   width: 100%;
+}
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header .header-divider {
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
   background: #3a3a3a;
 }
@@ -210,7 +226,6 @@ header .content-wrapper {
 header nav {
   width: 90%;
   padding: 20px 0 15px 0;
-
 }
 
 header nav ul {
@@ -260,7 +275,10 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
+  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -299,17 +317,19 @@ aside p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin: 50px 0;
+  padding: 50px 0;
+  align-items: center;
+  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
-  padding-bottom: 60px;
-  margin: 0;
+  margin-bottom: 60px;
 }
 
 .features article {
   width: 60%;
-  padding: 30px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
@@ -318,7 +338,7 @@ aside p {
 }
 
 .features .fontawesome-icon {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .features-items {
@@ -335,6 +355,7 @@ aside p {
   justify-content: center;
   flex-flow: row wrap;
   background: #2a423a;
+
 }
 
 .reviews h2 {
@@ -342,7 +363,6 @@ aside p {
 }
 
 .reviews h3 {
-  width: 55%;
   margin: 20px 0;
 }
 
@@ -537,6 +557,18 @@ aside p {
     justify-content: space-around;
   }
 
+  header .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+  }
+
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: left;
+  }
+
   header .header {
     width: 640px;
     display: flex;
@@ -561,6 +593,7 @@ aside p {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    min-height: 600px;
   }
 
   .hero-area h1 {
@@ -585,28 +618,41 @@ aside p {
   /* Features*/
   .features {
     margin: 0;
+    padding: 0;
+  }
+
+  .features h2 {
+    margin-bottom: 20px;
   }
 
   .features article {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     flex-basis: 50%;
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 60%;
   }
 
   /* Reviews*/
+  .reviews h2 {
+    width: 80%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
   .reviews article {
     display: flex;
     justify-content: space-between;
   }
 
-  .reviews article div {
-    width: 48%;
+  .reviews div {
+    padding: 0 2%;
   }
 
   /*Footer*/
@@ -688,12 +734,13 @@ aside p {
   }
 
   p {
-    font-size: 1.125;
+    font-size: 1.125em;
     line-height: 24px;
   }
+
   .faq h4,
   .faq p {
-    font-size: 1.125;
+    font-size: 1.125em;
     line-height: 18px;
   }
 
@@ -746,6 +793,7 @@ aside p {
   .reviews h2 {
     margin-bottom: 50px;
   }
+
 
   .reviews article div {
     width: 45%;
