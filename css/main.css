@@ -178,7 +178,6 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -239,6 +238,11 @@ header nav ul {
 /*Footer*/
 footer {
   flex-direction: column;
+  text-align: center;
+}
+
+footer .content-wrapper {
+  width: 55%;
 }
 
 footer h4 {
@@ -249,15 +253,26 @@ footer p {
   margin: 0;
 }
 
-footer .footer-content {
-  text-align: center;
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
-.social .social-icons {
+footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #527158;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
+
 }
 
 footer .copyright {
@@ -673,10 +688,6 @@ aside p {
   }
 
   /*Footer*/
-  footer .content-wrapper {
-    width: 70%;
-  }
-
   footer .footer-content {
     display: flex;
     justify-content: space-between;
@@ -685,6 +696,10 @@ aside p {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .social {
+    width: 35%;
   }
 
   footer .copyright {
@@ -751,9 +766,8 @@ aside p {
     font-size: 1.875em;
   }
 
-  .faq,
-  .mission h2 {
-    font-size: 3em;
+  .faq h2 {
+    font-size: 2.25em;
   }
 
   p {
@@ -765,6 +779,10 @@ aside p {
   .faq p {
     font-size: 1.125em;
     line-height: 18px;
+  }
+
+  footer .social-icons p {
+    font-size: 0.875em;
   }
 
   /*Desktop styles here*/
@@ -799,11 +817,7 @@ aside p {
   }
 
   /* Features*/
-  .features {
-    width: 100%;
-  }
-
-  .features h2 {
+    .features h2 {
     padding: 0;
   }
 
@@ -817,12 +831,22 @@ aside p {
     margin-bottom: 50px;
   }
 
+  
+  figure {
+    width: 51%;
+}
 
   .reviews article div {
-    width: 45%;
+    width: 42%;
+    padding-left: 9%;
   }
 
+  /* Footer*/
+  footer .social {
+    width: 35%;
+  }
 
+ 
   /* ==========================================================================
    About Page
    ========================================================================== */
