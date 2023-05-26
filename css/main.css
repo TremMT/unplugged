@@ -295,8 +295,9 @@ footer .copyright {
 }
 
 .hero-area h1 {
-  padding: 0 30px 0 10px;
   font-weight: 500;
+  width: 90%;
+  margin: 0;
 }
 
 /*Aside*/
@@ -341,7 +342,7 @@ aside p {
 }
 
 .features article {
-  width: 62%;
+  width: 72%;
   margin: 30px 0;
   text-align: center;
 }
