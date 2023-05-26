@@ -423,6 +423,7 @@ footer .contact {
 }
 
 .contact-section {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -735,37 +736,38 @@ footer .contact {
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
-}
 
-.contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.contact-section h4 {
-  font-size: 1.5em;
-}
+  .contact-section h4 {
+    font-size: 1.5em;
+  }
 
+  /* ==========================================================================
+     FAQ
+     ========================================================================== */
+  .faq h2 {
+    width: 100%;
+    margin: 0 0 25px 0;
+  }
 
-/* ==========================================================================
-   FAQ
-   ========================================================================== */
-.faq h2 {
-  width: 100%;
-  margin: 0 0 25px 0;
-}
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
 
-.faq .content-wrapper {
-  justify-content: space-between;
-}
+  .faq-content {
+    flex-basis: 45%;
+  }
 
-.faq-content {
-  flex-basis: 45%;
 }
 
 
 @media only screen and (min-width: 1200px) {
+
   /*General Styles*/
   h1 {
     font-size: 3.75em;
@@ -786,7 +788,7 @@ footer .contact {
   h4 {
     font-size: 1.875em;
   }
- 
+
   .faq h2 {
     font-size: 3em;
   }
@@ -802,9 +804,10 @@ footer .contact {
     line-height: 18px;
   }
 
-  .social h4, .contact h4 {
+  .social h4,
+  .contact h4 {
     font-size: 1.875em;
-}
+  }
 
   footer .social-icons p {
     font-size: 0.875em;
@@ -857,10 +860,10 @@ footer .contact {
   .features-items {
     align-items: flex-start;
   }
-  
+
   .features .features-item-description {
     width: 65%;
-}
+  }
 
   /* Reviews*/
   .reviews h2 {
